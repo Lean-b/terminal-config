@@ -88,7 +88,7 @@ plugins=(
 	rust
 	tmux
 	git
-    golang
+        golang
 )
 
 source $ZSH/oh-my-zsh.sh
