@@ -16,10 +16,10 @@ return require("packer").startup(function(use)
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+	use("jayp0521/mason-null-ls.nvim")  -- bridges gap b/w mason & null-ls
 
 	-- managing & installing lsp servers, linters & formatters
-	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+	use("williamboman/mason.nvim")        -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
 	use({
@@ -45,28 +45,42 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("rhysd/vim-grammarous")
 	use("neovim/nvim-lspconfig")
-	use("ink-analyzer/ink-analyzer")
 
-	use({
+
+	use {
 		"klen/nvim-test",
 		config = function()
-			require("nvim-test").setup()
-		end,
-	})
+			require('nvim-test').setup()
+		end
+	}
 
-	use({
-		"VonHeikemen/lsp-zero.nvim",
-		branch = "v2.x",
+	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v1.x',
 		requires = {
 			-- LSP Support
-			{ "neovim/nvim-lspconfig" }, -- Required
-			{ "williamboman/mason.nvim" }, -- Optional
-			{ "williamboman/mason-lspconfig.nvim" }, -- Optional
+			{ 'neovim/nvim-lspconfig' },
+			{ 'williamboman/mason.nvim' },
+			{ 'williamboman/mason-lspconfig.nvim' },
 
 			-- Autocompletion
-			{ "hrsh7th/nvim-cmp" }, -- Required
-			{ "hrsh7th/cmp-nvim-lsp" }, -- Required
-			{ "L3MON4D3/LuaSnip" }, -- Required
-		},
-	})
+			{ 'hrsh7th/nvim-cmp' },
+			{ 'hrsh7th/cmp-buffer' },
+			{ 'hrsh7th/cmp-path' },
+			{ 'saadparwaiz1/cmp_luasnip' },
+			{ 'hrsh7th/cmp-nvim-lsp' },
+			{ 'hrsh7th/cmp-nvim-lua' },
+
+			-- Snippets
+			{ 'L3MON4D3/LuaSnip' },
+			{ 'rafamadriz/friendly-snippets' },
+		}
+	}
+
+	use("Pocco81/auto-save.nvim")
+	use("folke/zen-mode.nvim")
+	use("eandrju/cellular-automaton.nvim")
+	use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	end }
 end)

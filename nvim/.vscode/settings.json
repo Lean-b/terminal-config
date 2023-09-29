@@ -1,5 +1,9 @@
 {
     "Lua.diagnostics.globals": [
-        "vim"
+        "vim",
+        "undotree"
+    ],
+    "Lua.diagnostics.disable": [
+        "need-check-nil"
     ]
 }
