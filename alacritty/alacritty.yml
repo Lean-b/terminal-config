@@ -19,12 +19,12 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.955
+  opacity: 0.2
 
   # Window padding 
   padding:
-   x: 8
-   y: 8
+   x: 1
+   y: 1
 
  # Window decorations
   #
@@ -51,37 +51,41 @@ scrolling:
  multiplier: 3
 
 
-# Colors (IR Black)
-colors:
-  # Default colors
-  primary:
-    background: '#000000'
-    foreground: '#ffffff'
 
-  cursor:
-    text: '#ffffff'
-    cursor: '#ffffff'
+
+ import:
+   ~/.config/alacritty/catppuccin-mocha.yml
+# Colors (IR Black)
+#colors:
+  # Default colors
+  # primary:
+  # background: '#000000'
+  # foreground: '#ffffff'
+
+   #cursor:
+   # text: '#ffffff'
+   # cursor: '#ffffff'
 
 
   # Normal colors
-  normal:
-    black:   '#4e4e4e'
-    red:     '#ff6c60'
-    green:   '#a8ff60'
-    yellow:  '#ffffb6'
-    blue:    '#96cbfe'
-    magenta: '#ff73fd'
-    cyan:    '#c6c5fe'
-    white:   '#eeeeee'
+  # normal:
+  # black:   '#4e4e4e'
+  # red:     '#ff6c60'
+  # green:   '#a8ff60'
+  # yellow:  '#ffffb6'
+  # blue:    '#96cbfe'
+  # magenta: '#ff73fd'
+  # cyan:    '#c6c5fe'
+  # white:   '#eeeeee'
 
   # Bright colors
-  bright:
-    black:   '#7c7c7c'
-    red:     '#ffb6b0'
-    green:   '#ceffab'
-    yellow:  '#ffffcb'
-    blue:    '#b5dcfe'
-    magenta: '#ff9cfe'
-    cyan:    '#dfdffe'
-    white:   '#ffffff'
+  # bright:
+  # black:   '#7c7c7c'
+  # red:     '#ffb6b0'
+  # green:   '#ceffab'
+  # yellow:  '#ffffcb'
+  # blue:    '#b5dcfe'
+  # magenta: '#ff9cfe'
+  # cyan:    '#dfdffe'
+  # white:   '#ffffff'
 
