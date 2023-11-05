@@ -1,4 +1,4 @@
--- Realizar búsquedas, explorar y navegar por diferentes tipos de datos y recursos
+-- Performing searches, exploring, and navigating through different types of data and resources
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})

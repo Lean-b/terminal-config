@@ -1,4 +1,4 @@
--- Harpoon es un complemento útil para gestionar ventanas y pestañas en Neovim
+-- Harpoon is a useful plugin for managing windows and tabs in Neovim.
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
