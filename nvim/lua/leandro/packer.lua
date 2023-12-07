@@ -45,6 +45,13 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("rhysd/vim-grammarous")
 	use("neovim/nvim-lspconfig")
+	use {
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{"nvim-lua/plenary.nvim"},
+			{"nvim-treesitter/nvim-treesitter"}
+		}
+	}
 
 
 	use {

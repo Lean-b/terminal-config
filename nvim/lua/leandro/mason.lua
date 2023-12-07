@@ -29,7 +29,12 @@ mason_lspconfig.setup({
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
 })
-
+mason_lsp.setup({
+	automatic_installation = true,
+	ensure_installed = {
+		'solidity',
+	},
+})
 mason_null_ls.setup({
   -- list of formatters & linters for mason to install
   ensure_installed = {
