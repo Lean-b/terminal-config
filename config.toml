@@ -1,0 +1,8 @@
+theme = "jellybeans"
+
+[keys.normal.";"]
+r = ":sh run.sh %val{run_command}"
+
+
+[editor]
+auto-save=true

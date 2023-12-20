@@ -1,0 +1,30 @@
+Ctrl-b,PageUp	Mover página hacia arriba	
+Ctrl-f,PageDown	Mover página hacia abajo
+Ctrl-u	Subir media página
+Ctrl-d	Bajar media página	
+Ctrl-i	Saltar hacia adelante 
+Ctrl-o	Saltar hacia atrás 
+Ctrl-s	Guarde la selección actual
+i	Insertar antes de la selección
+a	Insertar después de la selección (añadir)
+o	Abrir nueva línea debajo de la selección
+O	Abrir nueva línea encima de la selección
+.	Repetir la última inserción
+u	Deshacer cambio
+U	Rehacer cambio
+Alt-u	Retroceder en la historia
+Alt-U	Avanzar en la historia
+y	selección yanqui
+p	Pegar después de la selección
+P	Pegar antes de la selección
+d	Eliminar selección
+Alt-d	Eliminar selección, sin tirar
+Ctrl-c	Comentar/descomentar las selecciones
+v	Ingrese al modo de selección (extender)
+g	Ingrese al modo Ir
+:	Ingrese al modo de comando
+Z	Ingrese al modo de vista fija
+z	Ingrese al modo de visualización
+Space	Entrar en modo espacio
+Ctrl-w	Entrar en modo ventana
+Space	Entrar en modo espacio
